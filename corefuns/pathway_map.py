@@ -268,6 +268,7 @@ def draw_map(project_dir,fdrcut,resultsfile,BPM_group_tmp,WPM_group_tmp,PATH_gro
 	fig_nums = plt.get_fignums()
 	figs = [plt.figure(n) for n in fig_nums]
 	for fig in figs:
+#		fig.set_tight_layout(False)
 		fig.savefig(pp, format='pdf')
 	pp.close()
 
